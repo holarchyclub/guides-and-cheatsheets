@@ -6,3 +6,10 @@ sudo apt-get update
 
 sudo apt-get upgrade
 //install new packages on machine according to new list
+
+compgen -u
+// list all the usernames without any additional information
+
+less /etc/passwd
+//allows sysops to list the the users that are locally stored in the system
+
