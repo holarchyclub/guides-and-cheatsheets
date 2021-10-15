@@ -13,3 +13,6 @@ compgen -u
 less /etc/passwd
 //allows sysops to list the the users that are locally stored in the system
 
+sudo apt-get autoremove
+// get rid of unneeded packages
+
