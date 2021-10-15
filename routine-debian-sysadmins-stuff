@@ -6,3 +6,6 @@ sudo apt-get update
 
 sudo apt-get upgrade
 //install new packages on machine according to new list
+
+sudo apt-get autoremove
+// get rid of unneeded packages
