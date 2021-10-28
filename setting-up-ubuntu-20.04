@@ -1,0 +1,37 @@
+### This guide is the notes I took while setting up Ubuntu recently.
+# My architecture is x64 bit AMD processor , with Ubuntu FOCAL - if you don't know yours check system settings
+# Boot PC with a bootable USB of a flavor of Ubuntu that will run on your computer hardware
+# Once you are booted, go to the menu that says 
+# "install ubuntu" launch it > 
+# select "normal installation" > 
+# select do not download updates while installing > 
+# select drive for installation (a drive tht can be reformatted)
+# let the installer handle the partitioning, select a time zone, and hit continue
+# when installed, reboot your computer
+
+# on reboot once you sign in, open a terminal and use these commands
+ufw status
+# this is the firewall status
+# update package repos
+sudo apt update
+sudo apt upgrade
+# restart the machine again
+sudo shutdown -r
+# now when you get back in, open a terminal
+sudo apt update
+sudo apt upgrade
+# set firewall up
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+# are you connecting to a cloud vps on a specific port? if do put the port number at the end of this, otherwise run as is
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status verbose
+# great, we got our OS installed, we updated the repos, installed upgrades, and enabled the firewall to protect us while leaving ssh port 22 open
+# we can be more specific than just "ssh" though and allow specific IP's like this [replace made up adress with IP of your VPS or ssh target]
+sudo ufw allow from 102.394.madeupadress.14.7
+sudo apt update
+sudo apt upgrade
+# we are done! you can reboot for kicks with 'sudo shutdown -r' 
+
+# the next step I took was installing docker which is noted in another file in the repository, check it out!
