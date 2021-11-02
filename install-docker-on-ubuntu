@@ -40,11 +40,13 @@ sudo apt install docker-ce
 #check the status
 sudo systemctl status docker
 # if it says running then awesome! you can close out with ctrl+c
-# open a new terminal at ~$:
-# list file system by typing 
+# open a new terminal, then make sure you are in the root directory by typing cd
+cd
+# list file system by typing ls
 ls
 # now out of the list, change directory to documents
 cd Documents
+
 # make a folder (you can change the name)
 mkdir docker-projects 
 # change into the folder you made
