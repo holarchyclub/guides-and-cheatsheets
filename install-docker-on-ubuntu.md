@@ -1,11 +1,10 @@
-# This is a guide for installing a specific version of docker on Ubuntu linux
-
-## THIS IS ARCHITECTURE SPECIFIC ! watch out for your processor (ARM / intel / AMD) and x32 / x64 bit as well as the flavor of your OS
-
+# This is a guide for installing a specific version of docker on Ubuntu linux (or deb linux)
+### if you have a raspberry pi refer to "install-docker-on-raspbian" instead
 
 ## now let's get started
 ### open a terminal on your ubuntu 20 system
- we first will clear any docker versions just in case - if you already have a good docker install skip ahead to "check status"
+#### we first will clear any docker versions just in case 
+### if you already have a good docker install skip ahead to "check status"
 
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -37,9 +36,13 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
  lets check what flavor Ubuntu you are running
 ```
 cat /etc/lsb-release
+
 ```
+## THIS IS ARCHITECTURE SPECIFIC ! watch out for your processor (ARM / intel / AMD) and x32 / x64 bit as well as the flavor of your OS
+
  Add the correct Docker repository to APT sources:  
  (WATCH THE VERSION , IM ON 64 bit AMD processor with UBUNTU FOCAL)
+ 
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 ```
@@ -51,7 +54,7 @@ apt-cache policy docker-ce
 ```
 sudo apt install docker-ce
 ```
-## check the status
+# check status
 ```
 sudo systemctl status docker
 ```
