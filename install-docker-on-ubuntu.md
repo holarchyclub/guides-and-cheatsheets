@@ -5,7 +5,6 @@
 ### open a terminal on your ubuntu 20 system
 #### we first will clear any docker versions just in case 
 ### if you already have a good docker install skip ahead to "check status"
-
 ```
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
