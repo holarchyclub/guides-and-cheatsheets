@@ -147,4 +147,12 @@ docker ps -a
 ```
 docker start 'CONTAINER ID'
 ```
+to exit out of a running container environment like node, use ctrl+c
+``
+^C
+``
+to save a running container for later use
+``
+docker commit -m "commit message" -a "authorname" container_name username/image_name:tag
+``
 ### for other general container operations see the main cheat-sheet repository file "docker commands"
