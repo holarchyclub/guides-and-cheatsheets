@@ -1,0 +1,25 @@
+create a package.json
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
+
+A set of simple steps to edit the file you want is:
+
+    Go to the directory where your file is located.
+    Write the command 
+```
+sudo nano package.json
+```
+    in the terminal; sudo will ensure that you have permissions for editing the file.
+    Move to the end of the file with your arrow keys and write the change in your file.
+    Press Ctrl + X to exit the application, then Y to save changes.
