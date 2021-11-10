@@ -1,0 +1,24 @@
+commands for linux normal file operations
+
+Navigate!
+// Change Directory Further into file system
+cd /directory-name
+
+// Change directory by going "back up" a level
+cd ..
+
+// "Look around where I am" aka list
+ls .
+
+// Remove a file
+rm filename
+
+// Recursively delete a directory
+rm -r /directory-name
+
+Permissions!
+// Force permissions for a file
+sudo chown $USER filename.filetype
+
+// Force permissions for the entire directory I am in
+sudo chown -R $USER .
