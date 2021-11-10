@@ -1,18 +1,22 @@
 
 Routine commands for debian vps or raspi
 
+
+// update packages list
 sudo apt-get update
-//update packages list
 
+
+// install new packages on machine according to new list
 sudo apt-get upgrade
-//install new packages on machine according to new list
 
-compgen -u
+
 // list all the usernames without any additional information
+compgen -u
 
+
+// allows sysops to list the the users that are locally stored in the system
 less /etc/passwd
-//allows sysops to list the the users that are locally stored in the system
 
+
+// get rid of un-needed packages
 sudo apt-get autoremove
-// get rid of unneeded packages
-
