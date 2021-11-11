@@ -29,9 +29,18 @@ sudo ufw enable
 sudo ufw status verbose
 # great, we got our OS installed, we updated the repos, installed upgrades, and enabled the firewall to protect us while leaving ssh port 22 open
 # we can be more specific than just "ssh" though and allow specific IP's like this [replace made up adress with IP of your VPS or ssh target]
-sudo ufw allow from 102.394.madeupadress.14.7
+sudo ufw allow from my.ip.addr.ess
 sudo apt update
 sudo apt upgrade
+
+sudo systemctl mask accounts-daemon.service
+sudo apt-get purge modemmanager
+sudo systemctl mask avahi-daemon.service
+sudo systemctl mask ModemManager.service
+
 # we are done! you can reboot for kicks with 'sudo shutdown -r' 
 
 # the next step I took was installing docker which is noted in another file in the repository, check it out!
+
+
+## other hardenings steps
