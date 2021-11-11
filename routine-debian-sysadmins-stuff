@@ -20,3 +20,10 @@ less /etc/passwd
 
 // get rid of un-needed packages
 sudo apt-get autoremove
+
+// check firewall
+sudo ufw status verbose
+
+// check network connections
+sudo netstat -a
+
