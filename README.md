@@ -1,5 +1,5 @@
-# Guides and CheatsSheets
-Hey :) this is holarchy.club's repository for guides and cheat sheets for anything techy or computer related !
+# Guides and Cheat-Sheets
+## Hey :) this is holarchy.club's repository for guides and cheat sheets for anything techy or computer related !
 
 The internet has yielded incredible free tools that can run  productive , scientific , and critical applications. Open source software is this closest thing we've had to a broadening commons and we believe strongly in making the open source stack as accessible as possible .
 
